@@ -18,22 +18,19 @@ function validateCredentials() {
 
   const password = document.getElementById("password").value;
 
-  var userName = "kalki";
-  var passWord = 9090;
-  var check = false
+  var check = false;
 
   for (let i of datas) {
-    if (userName == i.username && passWord === i.password) 
+    if (username == i.username && password == i.password) {
+      check = true;
+      break;
 
-     
-     
-    
-    
-    {
-      alert("your login sucees");
     }
-     else {
-      alert("your login failed");
-    }
+  }
+  if(check){
+    alert('login')
+  }
+  else{
+    alert('login faild')
   }
 }
