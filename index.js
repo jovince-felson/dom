@@ -13,19 +13,27 @@ var datas = [
   },
 ];
 
-var user = "jovince";
-var pswrd = 1234;
-
 function validateCredentials() {
   const username = document.getElementById("username").value;
 
   const password = document.getElementById("password").value;
 
+  var userName = "kalki";
+  var passWord = 9090;
+  var check = false
+
   for (let i of datas) {
-    if (username == i.username && password === i.password) {
-      console.log("your login sucees");
-    } else {
-      console.log("your login failed");
+    if (userName == i.username && passWord === i.password) 
+
+     
+     
+    
+    
+    {
+      alert("your login sucees");
+    }
+     else {
+      alert("your login failed");
     }
   }
 }
